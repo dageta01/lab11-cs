@@ -9,6 +9,17 @@ Lab         Lab 11
 Course      CS 229
 Instructor  Parker
 */
+enum user_choce {
+    REC_DEF = 1,
+    REC,
+    CONE_DEF,
+    CONE,
+    CYL_DEF,
+    CYL,
+    EXIT
+};
+
+// does basic geometry
 
 int main()
 {
@@ -27,13 +38,13 @@ int main()
 
     switch(choice)
     {
-    case 1:{
+    case REC_DEF:{
         RectangularPrism rectPrism;
         cout << "\nSurface area is: " << rectPrism.getSurfaceArea() << endl;
         cout << "Volume is: " << rectPrism.getVolume() << endl;
         break;
     }
-    case 2:{
+    case REC:{
         double pLength, pWidth, pHeight;
         cout << "\nEnter rectangular prism's length: ";
         cin >> pLength;
@@ -47,13 +58,13 @@ int main()
         cout << "Volume is: " << rectPrism.getVolume() << endl;
         break;
     }
-    case 3:{
+    case CONE_DEF:{
         Cone cone;
         cout << "\nSurface area is " << cone.getSurfaceArea() << endl;
         cout << "Volume is " << cone.getVolume() << endl;
         break;
     }
-    case 4:{
+    case CONE:{
         double radius, height;
         cout << "\nEnter the cone's radius: ";
         cin >> radius;
@@ -65,13 +76,13 @@ int main()
         cout << "Volume is: " << cone.getVolume() << endl;
         break;
     }
-    case 5:{
+    case CYL_DEF:{
         Cylinder cylinder;
         cout << "\nSurface area is: " << cylinder.getSurfaceArea() << endl;
         cout << "Volume is: " << cylinder.getVolume() << endl;
         break;
     }
-    case 6:{
+    case CYL:{
         double radius, height;
         cout << "\nEnter cylinder's radius: ";
         cin >> radius;
@@ -83,9 +94,9 @@ int main()
         cout << "Volume is: " << cylinder.getVolume() << endl;
         break;
     }
-    case 7:
+    case EXIT:
         break;
-    default:
+    default: // left in for sanity
         cout << "\nYou should not be seeing this!" << endl;
     }
 
