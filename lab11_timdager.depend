@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1478660412 source:c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\main.cpp
+	<iostream>
+	"RectangularPrism.h"
+	"Cone.h"
+	"Cylinder.h"
+
+1478658649 source:c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\src\rectangularprism.cpp
+	"RectangularPrism.h"
+
+1478658671 c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\include\rectangularprism.h
+
+1478660525 source:c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\src\cone.cpp
+	"Cone.h"
+	<math.h>
+
+1478658887 c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\include\cone.h
+
+1478659112 source:c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\src\cylinder.cpp
+	"Cylinder.h"
+	<math.h>
+
+1478659056 c:\users\timda\onedrive\documents\c,c++ hw and labs\lab11_timdager\include\cylinder.h
+
